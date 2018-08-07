@@ -55,7 +55,7 @@ function build_taxonomies() {
     register_taxonomy( 'company_type', 'company',
    array( 
   'hierarchical' => true, // true = acts like categories false = acts like tags
-  'label' => 'Organization Type', 
+  'label' => 'Company Type', 
   'query_var' => true, 
   'rewrite' => true ,
   'show_admin_column' => true,
