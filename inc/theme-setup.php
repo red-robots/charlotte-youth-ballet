@@ -41,6 +41,10 @@ function acstarter_setup() {
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
     'about' => esc_html__( 'About Subnav', 'acstarter' ),
     'company' => esc_html__( 'The Company Subnav', 'acstarter' ),
+    'outreach' => esc_html__( 'Outreach Subnav', 'acstarter' ),
+    'support' => esc_html__( 'Support Subnav', 'acstarter' ),
+    'dance' => esc_html__( 'Dance Subnav', 'acstarter' ),
+    'performances' => esc_html__( 'Performances Subnav', 'acstarter' ),
   ) );
 
   /*
