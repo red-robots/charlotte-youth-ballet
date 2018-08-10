@@ -229,8 +229,34 @@ nav.top {
 		}
 	}
 }
-
-
+nav.subnav {
+	width: 100%;
+	float: left;
+	border-top: 2px solid $color-dark-grey;
+	border-bottom: 2px solid $color-dark-grey;
+	line-height: 3;
+	text-align: center;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		width: auto;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: block;
+		padding: 0 20px;
+		color: $color-pink;
+		&:hover {
+			color: #fff;
+			background-color: $color-pink;
+		}
+	}
+}
 
 
 

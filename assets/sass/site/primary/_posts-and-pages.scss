@@ -182,6 +182,106 @@ section.third-section {
 		}
 	}
 }
+section.company {
+	width: 100%;
+	float: left;
+	.flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 40px 0;
+	}
+	.card {
+		width: auto;
+		position: relative;
+		flex-basis: 90%;
+		margin: 0 auto 30px auto;
+		
+		background-color: #fff;
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 22%;
+			margin: 0 0 30px 0;
+		}
+		img {
+			width: 100%;
+		}
+		.content {
+			width: 100%;
+			padding: 5%;
+			text-align: center;
+		}
+		h2, h3 {
+			color: $color-pink;
+			text-transform: uppercase;
+			line-height: 1.1;
+		}
+		h2 {
+			width: 100%;
+			position: relative;
+			font-size: 16px;
+			padding: 10px 0;
+			border-bottom: 1px solid $color-blue;
+			margin: 0;
+		}
+		h3 {
+			font-size: 13px;
+			padding: 10px 0;
+			margin: 0;
+		}
+		.hover {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba($color-blue, .7);
+			position: absolute;
+			opacity: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			@include transition(all ease .2s);
+			&:hover {
+				opacity: 1;
+			}
+		}
+		.button {
+			width: auto;
+			text-align: center;
+			margin: 0 auto;
+			a {
+				display: block;
+				padding: 5px 20px;
+				background-color: #fff;
+				color: $color-pink;
+				&:hover {
+					color: #fff;
+					background-color: $color-pink;
+					border: 2px solid #fff;
+				}
+			}
+		}
+	}
+}
+article.company {
+	.left {
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: 30%;
+			float: left;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.right {
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: 65%;
+			float: right;
+		}
+	}
+}
 
 
 

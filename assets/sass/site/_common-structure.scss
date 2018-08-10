@@ -1,6 +1,10 @@
 
 a {
 	text-decoration: none;
+	@include transition(all ease .2s);
+	&:hover {
+
+	}
 }
 .clear {clear: both;}
 .wrapper {
@@ -38,7 +42,7 @@ a {
 	@media screen and (min-width: $tabwidth) {
 		width: 26%;
 		float: right;
-		margin: 0;
+		margin: 120px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
@@ -142,7 +146,7 @@ a {
 .page-bg {
 	width: 100%;
 	float: left;
-	background-color: $color-grey;
+	background-color: $color-light-grey;
 }
 .button {
 	width: auto;
@@ -159,6 +163,10 @@ a {
 			background-color: $color-blue;
 		}
 	}
+}
+article {
+	width: 100%;
+	float: left;
 }
 .site-footer {
 	width: 100%;
@@ -224,6 +232,14 @@ section.footer-nav {
 	width: 100%;
 	clear: both;
 	font-size: 12px;
+}
+.gal-image {
+	width: 100%;
+	float: left;
+	margin: 0 0 20px 0;
+	img {
+		width: 100%;
+	}
 }
 
 

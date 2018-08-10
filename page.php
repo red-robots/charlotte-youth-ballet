@@ -12,7 +12,11 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
+
+get_template_part('inc/subnav');
+
+?>
 <div class="page-bg">
 	<div class="wrapper">
 		<div id="primary" class="content-area ">

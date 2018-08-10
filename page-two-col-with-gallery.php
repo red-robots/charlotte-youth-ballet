@@ -36,7 +36,20 @@ get_template_part('inc/subnav');
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<div class="widget-area">
-			
+			<?php 
+			$gallery = get_field('gallery');
+			$size = 'full';
+			// echo '<pre>';
+			// print_r($gallery);
+			// echo '</pre>';
+
+			foreach ( $gallery as $image ) : ?>
+				<div class="gal-image">
+					<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+				</div>
+			<?php endforeach; ?>
+
+		
 		</div>
 	</div>
 </div>
