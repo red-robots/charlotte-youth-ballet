@@ -1,18 +1,17 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * Template Name: 2 col with Gallery
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
+
+get_template_part('inc/subnav');
+
+?>
 <div class="page-bg">
 	<div class="wrapper">
 		<div id="primary" class="content-area ">
@@ -36,6 +35,9 @@ get_header(); ?>
 				
 			</main><!-- #main -->
 		</div><!-- #primary -->
+		<div class="widget-area">
+			
+		</div>
 	</div>
 </div>
 <?php

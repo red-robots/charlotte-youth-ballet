@@ -12,7 +12,7 @@ a {
 		width: 100%;
 	}
 	@media screen and (min-width: $deskwidth) {
-		width: 1200px;
+		width: 90%;
 		padding: 0px;
 	}
 }
@@ -139,6 +139,27 @@ a {
 		/*width: 1200px;*/
 	}
 }
+.page-bg {
+	width: 100%;
+	float: left;
+	background-color: $color-grey;
+}
+.button {
+	width: auto;
+	display: inline-block;
+	a {
+		background-color: $color-pink;
+		color: #fff;
+		padding: 10px 20px;
+		@include transition(all ease .2s);
+		transform: scale(1);
+		display: block;
+		&:hover {
+			transform: scale(1.1);
+			background-color: $color-blue;
+		}
+	}
+}
 .site-footer {
 	width: 100%;
 	clear: both;
@@ -146,7 +167,7 @@ a {
 section.footer-nav {
 	padding: 40px 0;
 	width: 100%;
-	float: left;
+	text-align: center;
 	background-color: $color-blue;
 	color: #fff;
 	display: flex;
@@ -154,10 +175,25 @@ section.footer-nav {
 	@media screen and (min-width: $tabwidth) {
 		flex-direction: row;
 		flex-wrap: wrap;
+		float: left;
+		text-align: left;
+		justify-content: space-evenly;
 	}
 	@media screen and (min-width: $deskwidth) {
 		flex-wrap: nowrap;
-		justify-content: space-evenly;
+		
+	}
+	h3 {
+		font-size: 16px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 14px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 16px;
+		}
 	}
 	a {
 		color: #fff;
@@ -167,6 +203,27 @@ section.footer-nav {
 		padding: 0;
 		list-style: none;
 	}
+	li {
+		font-size: 12px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 14px;
+		}
+	}
+}
+.bottom-footer {
+	background-color: $color-dark-blue;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	clear: both;
+	font-size: 12px;
 }
 
 

@@ -1,7 +1,23 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	text-transform: uppercase;
 }
 
-.entry-content h1 {
-	font-size: 30px;
+
+header.entry-header {
+	h1 {
+		color: $color-blue;
+		
+		font-size: 34px;
+	}
+}
+
+.entry-content {
+	font-size: 16px;
+	line-height: 2;
+	h2 {
+		font-size: 20px;
+		color: $color-blue;
+		margin: 0;
+	}
 }

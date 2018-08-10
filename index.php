@@ -49,10 +49,14 @@ endif;
 			<div class="info">
 				<h2><?php echo $main_title; ?></h2>
 				<?php echo $copy; ?>
+				<div class="button">
+					<a href="<?php echo $learn_more_link; ?>">Learn More</a>
+				</div>
 			</div>
+			
 		</section>
 <?php 
-
+$bg_image = get_field('background_image_third');
 $fb_image = get_field('first_block_image');
 $sb_image = get_field('second_block_image');
 $tb_image = get_field('third_block_image');
@@ -69,54 +73,59 @@ $tb_link = get_field('first_block_link');
 
  ?>
 		<section class="third-section">
-			<div class="item">
-				<a href="<?php echo $fb_link; ?>">
-					<div class="image">
-						<div class="circle">
-							<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
+			<div class="flex">
+				<div class="item">
+					<a href="<?php echo $fb_link; ?>">
+						<div class="image">
+							<div class="circle">
+								<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
+							</div>
+							<div class="back-image">
+								<img src="<?php echo $fb_image['url']; ?>" alt="<?php echo $fb_image['alt']; ?>">
+							</div>
 						</div>
-						<div class="back-image">
-							<img src="<?php echo $fb_image['url']; ?>" alt="<?php echo $fb_image['alt']; ?>">
+						<h2><?php echo $fb_title; ?></h2>
+						<div class="desc">
+							<?php echo $fb_copy; ?>
 						</div>
-					</div>
-					<h2><?php echo $fb_title; ?></h2>
-					<div class="desc">
-						<?php echo $fb_copy; ?>
-					</div>
-				</a>
+					</a>
+				</div>
+				<div class="item">
+					<a href="<?php echo $sb_link; ?>">
+						<div class="image">
+							<div class="circle">
+								<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
+							</div>
+							<div class="back-image">
+								<img src="<?php echo $sb_image['url']; ?>" alt="<?php echo $sb_image['alt']; ?>">
+							</div>
+						</div>
+						<h2><?php echo $sb_title; ?></h2>
+						<div class="desc">
+							<?php echo $sb_copy; ?>
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="<?php echo $tb_link; ?>">
+						<div class="image">
+							<div class="circle">
+								<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
+							</div>
+							<div class="back-image">
+								<img src="<?php echo $tb_image['url']; ?>" alt="<?php echo $tb_image['alt']; ?>">
+							</div>
+						</div>
+						<h2><?php echo $tb_title; ?></h2>
+						<div class="desc">
+							<?php echo $tb_copy; ?>
+						</div>
+					</a>
+				</div>
 			</div>
-			<div class="item">
-				<a href="<?php echo $sb_link; ?>">
-					<div class="image">
-						<div class="circle">
-							<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
-						</div>
-						<div class="back-image">
-							<img src="<?php echo $sb_image['url']; ?>" alt="<?php echo $sb_image['alt']; ?>">
-						</div>
-					</div>
-					<h2><?php echo $sb_title; ?></h2>
-					<div class="desc">
-						<?php echo $sb_copy; ?>
-					</div>
-				</a>
-			</div>
-			<div class="item">
-				<a href="<?php echo $tb_link; ?>">
-					<div class="image">
-						<div class="circle">
-							<img src="<?php bloginfo('template_url'); ?>/images/circle.png" />
-						</div>
-						<div class="back-image">
-							<img src="<?php echo $tb_image['url']; ?>" alt="<?php echo $tb_image['alt']; ?>">
-						</div>
-					</div>
-					<h2><?php echo $tb_title; ?></h2>
-					<div class="desc">
-						<?php echo $tb_copy; ?>
-					</div>
-				</a>
-			</div>
+			<!-- <div class="bg-image">
+				<img src="<?php echo $bg_image['url']; ?>">
+			</div> -->
 		</section>
 
 		</main><!-- #main -->

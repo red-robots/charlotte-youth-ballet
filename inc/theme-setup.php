@@ -39,6 +39,8 @@ function acstarter_setup() {
     'primary' => esc_html__( 'Primary', 'acstarter' ),
     'top' => esc_html__( 'Top Header', 'acstarter' ),
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
+    'about' => esc_html__( 'About Subnav', 'acstarter' ),
+    'company' => esc_html__( 'The Company Subnav', 'acstarter' ),
   ) );
 
   /*

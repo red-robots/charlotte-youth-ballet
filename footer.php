@@ -8,7 +8,9 @@
  *
  * @package ACStarter
  */
-
+$address1 = get_field('address_line_1', 'option');
+$address2 = get_field('address_line_2', 'option');
+$phone = get_field('phone_number', 'option');
 ?>
 
 	</div><!-- #content -->
@@ -46,7 +48,7 @@
 			</section>
 
 			<section class="bottom-footer">
-				
+				&copy; <?php echo date('Y') . ' &#8226; '.get_bloginfo('name').' All Rights Reserved. | '.$address1.' &#8226; '.$address2. ' &#8226; '.$phone; ?>
 			</section>
 	
 	</footer><!-- #colophon -->
