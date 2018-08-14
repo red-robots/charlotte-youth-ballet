@@ -189,19 +189,29 @@ section.company {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 		padding: 40px 0;
 	}
 	.card {
 		width: auto;
 		position: relative;
 		flex-basis: 90%;
-		margin: 0 auto 30px auto;
 		
 		background-color: #fff;
 		@media screen and (min-width: $tabwidth) {
 			flex-basis: 22%;
-			margin: 0 0 30px 0;
+		}
+		&.first {
+			margin: 0 auto 30px auto;
+			@media screen and (min-width: $tabwidth) {
+				margin: 0 3% 30px 0;
+			}
+		}
+		&.last {
+			margin: 0 auto 30px auto;
+			@media screen and (min-width: $tabwidth) {
+				margin: 0 0px 30px 0;
+			}
 		}
 		img {
 			width: 100%;
@@ -279,6 +289,50 @@ article.company {
 		@media screen and (min-width: $tabwidth) {
 			width: 65%;
 			float: right;
+		}
+	}
+}
+section.page-portals {
+	width: 100%;
+	float: left;
+	.flex {
+		
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		@media screen and (min-width: $tabwidth) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: stretch;
+			flex-wrap: nowrap;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+	}
+	.portal {
+		flex-basis: 100%;
+		width: 100%;
+		position: relative;
+		margin: 0 auto 30px auto;
+		overflow: hidden;
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 45%;
+			width: auto;
+			margin: 2%;
+		}
+		img {
+			width: 100%;
+			line-height: 0;
+			float: left;
+		}
+		.content {
+			width: 100%;
+			padding: 5%;
+			background-color: rgba(#fff, 1);
+			float: left;
+			h2 {
+				color: $color-blue;
+			}
 		}
 	}
 }

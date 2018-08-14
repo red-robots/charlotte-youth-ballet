@@ -61,14 +61,14 @@ $fb_image = get_field('first_block_image');
 $sb_image = get_field('second_block_image');
 $tb_image = get_field('third_block_image');
 $fb_title = get_field('first_block_title');
-$sb_title = get_field('third_block_title');
-$tb_title = get_field('first_block_title');
+$sb_title = get_field('second_block_title');
+$tb_title = get_field('third_block_title');
 $fb_copy = get_field('first_block_copy');
-$sb_copy = get_field('third_block_copy');
-$tb_copy = get_field('first_block_copy');
+$sb_copy = get_field('second_block_copy');
+$tb_copy = get_field('third_block_copy');
 $fb_link = get_field('first_block_link');
-$sb_link = get_field('third_block_link');
-$tb_link = get_field('first_block_link');
+$sb_link = get_field('second_block_link');
+$tb_link = get_field('third_block_link');
 
 
  ?>
