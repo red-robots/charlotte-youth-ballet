@@ -8,7 +8,11 @@ if( $i == 4 ) {
 } else {
 	$divClass = 'first';
 }
-
+$postID = get_the_ID();
+$array = get_the_terms($postID, 'company_type');
+// echo '<pre>';
+// print_r($array);
+// echo '</pre>';
  ?>
 <div class="card <?php echo $divClass; ?>">
 	<?php if($artist_photo) { ?>

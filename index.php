@@ -36,7 +36,7 @@ endif;
 	<img src="<?php echo $banner['url']; ?>" alt="<?php echo $banner['alt']; ?>">
 </section>
 
-	<div id="primary" class="content-area-full">
+	<div class="content-area-full">
 		<main id="main" class="site-main" role="main">
 
 		<section class="home about">

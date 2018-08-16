@@ -20,7 +20,11 @@ a {
 		padding: 0px;
 	}
 }
-
+.content-area-full {
+	width: 100%;
+	float: left;
+	margin: 40px 0 0 0;
+}
 .content-area {
 	width: 100%;
 	margin: 0px auto;
@@ -28,7 +32,7 @@ a {
 	@media screen and (min-width: $tabwidth) {
 		width: 66%;
 		float: left;
-		margin: 0;
+		margin: 40px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
@@ -232,6 +236,9 @@ section.footer-nav {
 	width: 100%;
 	clear: both;
 	font-size: 12px;
+	a {
+		color: $color-pink;
+	}
 }
 .gal-image {
 	width: 100%;

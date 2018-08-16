@@ -315,6 +315,7 @@ section.page-portals {
 		position: relative;
 		margin: 0 auto 30px auto;
 		overflow: hidden;
+		background-color: rgba(#fff, 1);
 		@media screen and (min-width: $tabwidth) {
 			flex-basis: 45%;
 			width: auto;
@@ -328,7 +329,7 @@ section.page-portals {
 		.content {
 			width: 100%;
 			padding: 5%;
-			background-color: rgba(#fff, 1);
+			
 			float: left;
 			h2 {
 				color: $color-blue;

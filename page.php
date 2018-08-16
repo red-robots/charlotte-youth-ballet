@@ -31,7 +31,15 @@ get_template_part('inc/subnav');
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+						<?php 
+						if(is_page('sitemap')) {
+							the_content();
+							wp_nav_menu( array( 'theme_location' => 'sitemap' );
+						} else {
+							the_content();
+						}
+						 ?>
+						
 					</div><!-- .entry-content -->
 
 				</article><!-- #post-## -->

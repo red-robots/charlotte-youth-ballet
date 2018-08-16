@@ -47,15 +47,15 @@ get_template_part('inc/subnav');
 						$parent = new WP_Query( $args );
 						if ( $parent->have_posts() ) : 
 							while ( $parent->have_posts() ) : $parent->the_post(); ?>
-						<div class="portal">
+						<div class="portal js-blocks">
 							<?php if(has_post_thumbnail() ) {
 								the_post_thumbnail();
 								}?>
 								<div class="content">
 									<h2><?php the_title(); ?></h2>
-									<?php the_excerpt(); ?>
+									<?php // the_excerpt(); ?>
 									<div class="button">
-										<a href="<?php the_permalink(); ?>">View Performance</a>
+										<a href="<?php the_permalink(); ?>">Read More</a>
 									</div>
 								</div>
 							

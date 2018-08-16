@@ -50,7 +50,7 @@ get_header();
 					array(
 						'taxonomy' => 'company_type', // your custom taxonomy
 						'field' => 'slug',
-						'terms' => array( 'artistic-direction', 'leadership' ) // the terms (categories) you created
+						'terms' => array( 'artistic-direction', 'leadership' )
 					)
 				)
 			));
@@ -77,7 +77,7 @@ get_header();
 					array(
 						'taxonomy' => 'company_type', // your custom taxonomy
 						'field' => 'slug',
-						'terms' => array( 'principal', 'featured-artist' ) // the terms (categories) you created
+						'terms' => array( 'principal', 'featured-artist' )
 					)
 				)
 			));
@@ -91,7 +91,7 @@ get_header();
 						 endwhile; ?>
 					 </div>
 				</section>
-			<?php endif; ?>
+			<?php endif; wp_reset_query(); wp_reset_postdata();?>
 
 
 			<?php
@@ -104,7 +104,7 @@ get_header();
 					array(
 						'taxonomy' => 'company_type', // your custom taxonomy
 						'field' => 'slug',
-						'terms' => array( 'guest-artist', 'dancer' ) // the terms (categories) you created
+						'terms' => array( 'guest-artist', 'dancer' )
 					)
 				)
 			));

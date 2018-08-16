@@ -48,7 +48,7 @@ $phone = get_field('phone_number', 'option');
 			</section>
 
 			<section class="bottom-footer">
-				&copy; <?php echo date('Y') . ' &#8226; '.get_bloginfo('name').' All Rights Reserved. | '.$address1.' &#8226; '.$address2. ' &#8226; '.$phone; ?>
+				&copy; <?php echo date('Y') . ' &#8226; '.get_bloginfo('name').' All Rights Reserved. | '.$address1.' &#8226; '.$address2. ' &#8226; '.$phone.' &#8226; <a href="'.get_bloginfo('url').'/sitemap">Sitemap</a> &#8226; site by <a href="https://bellaworksweb.com">BW</a>'; ?>
 			</section>
 	
 	</footer><!-- #colophon -->
