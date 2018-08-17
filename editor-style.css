@@ -1,3 +1,19 @@
 .custom-color {
   color: #444;
 }
+span.button {
+	width: auto;
+	display: inline-block;
+}
+span.button a {
+    background-color: #b738a1;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    display: block;
+}

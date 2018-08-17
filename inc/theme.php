@@ -62,11 +62,11 @@ add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
   Keep this commented out to keep from getting duplicate "Format" dropdowns
 
 ---------------------------------------*/
-// function acc_custom_styles($buttons) {
-//   array_unshift($buttons, 'styleselect');
-//   return $buttons;
-// }
-// add_filter('mce_buttons_2', 'acc_custom_styles');
+function acc_custom_styles($buttons) {
+  array_unshift($buttons, 'styleselect');
+  return $buttons;
+}
+add_filter('mce_buttons_2', 'acc_custom_styles');
 
 
 /*
@@ -86,33 +86,33 @@ function my_mce_before_init_insert_formats( $init_array ) {
     
     // A block element
     array(  
-      'title' => 'Block Color',  
+      'title' => 'Button Style',  
       'block' => 'span',  
-      'classes' => 'custom-color-block',
+      'classes' => 'button',
       'wrapper' => true,
       
     ),
     // inline color
-    array(  
-      'title' => 'Custom Color',  
-      'inline' => 'span',  
-      'classes' => 'custom-color',
-      'wrapper' => true,
+    // array(  
+    //   'title' => 'Custom Color',  
+    //   'inline' => 'span',  
+    //   'classes' => 'custom-color',
+    //   'wrapper' => true,
       
-    ),
-     array(
-        'title' => 'Header 2',
-        'format' => 'h2',
-        //'icon' => 'bold'
-    ),
-    array(
-        'title' => 'Header 3',
-        'format' => 'h3'
-    ),
-    array(
-        'title' => 'Paragraph',
-        'format' => 'p'
-    )
+    // ),
+    //  array(
+    //     'title' => 'Header 2',
+    //     'format' => 'h2',
+    //     //'icon' => 'bold'
+    // ),
+    // array(
+    //     'title' => 'Header 3',
+    //     'format' => 'h3'
+    // ),
+    // array(
+    //     'title' => 'Paragraph',
+    //     'format' => 'p'
+    // )
   );  
   // Insert the array, JSON ENCODED, into 'style_formats'
   $init_array['style_formats'] = json_encode( $style_formats );  
@@ -126,7 +126,7 @@ add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 function my_theme_add_editor_styles() {
     add_editor_style( 'editor-style.css' );
 }
-add_action( 'init', 'my_theme_add_editor_styles' );
+add_action( 'admin_init', 'my_theme_add_editor_styles' );
 /*-------------------------------------
   Change Admin Labels
 ---------------------------------------*/

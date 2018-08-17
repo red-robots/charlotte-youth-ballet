@@ -13,13 +13,13 @@ $title = get_field('title');
 $artist_photo = get_field('artist_photo');
 
 ?>
-<!-- <nav class="subnav">
+<nav class="subnav">
 <ul>
-	<li><a href="#leadership">Artistic Leadership</a></li>
-	<li><a href="#featured">Principals & Featured Artists</a></li>
-	<li><a href="#guest">Guest Artists</a></li>
+	<li><a href="<?php bloginfo('url'); ?>/the-company/#leadership">Artistic Leadership</a></li>
+	<li><a href="<?php bloginfo('url'); ?>/the-company/#featured">Principals & Featured Artists</a></li>
+	<li><a href="<?php bloginfo('url'); ?>/the-company/#guest">Guest Artists</a></li>
 </ul>
-</nav> -->
+</nav>
 
 <div class="wrapper">
 	<div id="primary" class="content-area-full">
