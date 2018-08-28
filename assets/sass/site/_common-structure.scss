@@ -195,6 +195,20 @@ section.footer-nav {
 		flex-wrap: nowrap;
 		
 	}
+	.item {
+		width: auto;
+		flex-basis: 100%;
+		// background-color: #fff;
+
+		@media screen and (min-width: $tabwidth) {
+			// flex: 0 0 18%;
+			flex-basis: 18%;
+			margin: 0 20px ;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+	}
 	h3 {
 		font-size: 16px;
 		@media screen and (min-width: $tabwidth) {
