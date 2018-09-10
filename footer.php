@@ -14,39 +14,39 @@ $phone = get_field('phone_number', 'option');
 ?>
 
 	</div><!-- #content -->
-
+<div class="footernav-wrap">
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		
-			<section class="footer-nav">
-				<?php 
-				if( have_rows('links', 'option') ) : while( have_rows('links', 'option') ) : the_row(); 
-					$section_title = get_sub_field('section_title');
-				?>
-					<div class="item">
-						<h3><?php echo $section_title; ?></h3>
-						<ul>
-						<?php if( have_rows('page_links', 'option') ) : 
-						while( have_rows('page_links', 'option') ) : the_row(); 
+		<section class="footer-nav">
+			<?php 
+			if( have_rows('links', 'option') ) : while( have_rows('links', 'option') ) : the_row(); 
+				$section_title = get_sub_field('section_title');
+			?>
+				<div class="item">
+					<h3><?php echo $section_title; ?></h3>
+					<ul>
+					<?php if( have_rows('page_links', 'option') ) : 
+					while( have_rows('page_links', 'option') ) : the_row(); 
 
-						$link = get_sub_field('link');
+					$link = get_sub_field('link');
 
-						?>
-						<li>
-							<a href="<?php echo get_permalink( $link ); ?>">
-								<?php echo get_the_title( $link );?>
-							</a>
-						</li>
-					<?php endwhile; endif; ?>
-						</ul>
-					</div>
-					<?php endwhile; ?>
-						
-				<?php endif; ?>
-				
-						
+					?>
+					<li>
+						<a href="<?php echo get_permalink( $link ); ?>">
+							<?php echo get_the_title( $link );?>
+						</a>
+					</li>
+				<?php endwhile; endif; ?>
+					</ul>
+				</div>
+				<?php endwhile; ?>
+					
+			<?php endif; ?>
 			
-			</section>
-
+					
+		
+		</section>
+</div>
 			<section class="bottom-footer">
 				&copy; <?php echo date('Y') . ' &#8226; '.get_bloginfo('name').' All Rights Reserved. | '.$address1.' &#8226; '.$address2. ' &#8226; '.$phone.' &#8226; <a href="'.get_bloginfo('url').'/sitemap">Sitemap</a> &#8226; site by <a href="https://bellaworksweb.com">BW</a>'; ?>
 			</section>

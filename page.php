@@ -34,7 +34,7 @@ get_template_part('inc/subnav');
 						<?php 
 						if(is_page('sitemap')) {
 							the_content();
-							wp_nav_menu( array( 'theme_location' => 'sitemap' );
+							wp_nav_menu( array( 'theme_location' => 'sitemap' ));
 						} else {
 							the_content();
 						}
