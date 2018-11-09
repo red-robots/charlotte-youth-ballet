@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+<script async src='https://tag.simpli.fi/sifitag/dbfeee40-c121-0136-532a-067f653fa718'></script>
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
 
 
